@@ -1,0 +1,49 @@
+.background    { background: rgb(73, 47, 105); 
+                /*background-image: url(pixel_landscape.png);*/
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgba(255, 255, 255, 0.81); }
+.wall          { background: rgb(4, 152, 89);   }
+/*.water          {background: rgba(39, 62, 126, 0.49);}*/
+
+.actor  { position: absolute;  }
+.coin   { background: rgb(232, 250, 19); }
+.player { background: rgb(244, 138, 15); }
+.megaCoin{background: #9a039a; }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .background {
+  background: rgba(80, 80, 80, 0.67);
+}
+.lost .player{
+    background: rgba(253, 253, 253, 0.81);
+}
+.lost .wall{
+    background: rgb(253, 117, 0);
+}
+.lost .lava {
+    background: rgba(255, 0, 0, 0.81);
+}
+
+
+
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+    background: rgb(232, 250, 19);
+}
+.won .background {
+    background: rgb(31, 111, 154);
+}
+.won .lava {
+    background: rgba(76, 76, 77, 0.87);
+}
+.won .wall{
+    background: rgb(8, 255, 150);
+}
